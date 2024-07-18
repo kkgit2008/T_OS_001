@@ -1,29 +1,21 @@
 
-Canvas.android27-8.1.0.class
+Canvas.android28_9.0.0.class
 
 package android.graphics;
 
 import android.graphics.PorterDuff;
 import android.graphics.Region;
-/* loaded from: Canvas.android27-8.1.0.class */
+import androidx.annotation.RecentlyNonNull;
+import androidx.annotation.RecentlyNullable;
+/* loaded from: Canvas.android28_9.0.0.class */
 public class Canvas {
     public static final int ALL_SAVE_FLAG = 31;
-    @Deprecated
-    public static final int CLIP_SAVE_FLAG = 2;
-    @Deprecated
-    public static final int CLIP_TO_LAYER_SAVE_FLAG = 16;
-    @Deprecated
-    public static final int FULL_COLOR_LAYER_SAVE_FLAG = 8;
-    @Deprecated
-    public static final int HAS_ALPHA_LAYER_SAVE_FLAG = 4;
-    @Deprecated
-    public static final int MATRIX_SAVE_FLAG = 1;
 
     public Canvas() {
         throw new RuntimeException("Stub!");
     }
 
-    public Canvas(Bitmap bitmap) {
+    public Canvas(@RecentlyNonNull Bitmap bitmap) {
         throw new RuntimeException("Stub!");
     }
 
@@ -31,7 +23,7 @@ public class Canvas {
         throw new RuntimeException("Stub!");
     }
 
-    public void setBitmap(Bitmap bitmap) {
+    public void setBitmap(@RecentlyNullable Bitmap bitmap) {
         throw new RuntimeException("Stub!");
     }
 
@@ -68,34 +60,29 @@ public class Canvas {
     }
 
     @Deprecated
-    public int save(int saveFlags) {
+    public int saveLayer(@RecentlyNullable RectF bounds, @RecentlyNullable Paint paint, int saveFlags) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public int saveLayer(@RecentlyNullable RectF bounds, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public int saveLayer(RectF bounds, Paint paint, int saveFlags) {
+    public int saveLayer(float left, float top, float right, float bottom, @RecentlyNullable Paint paint, int saveFlags) {
         throw new RuntimeException("Stub!");
     }
 
-    public int saveLayer(RectF bounds, Paint paint) {
-        throw new RuntimeException("Stub!");
-    }
-
-    @Deprecated
-    public int saveLayer(float left, float top, float right, float bottom, Paint paint, int saveFlags) {
-        throw new RuntimeException("Stub!");
-    }
-
-    public int saveLayer(float left, float top, float right, float bottom, Paint paint) {
+    public int saveLayer(float left, float top, float right, float bottom, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public int saveLayerAlpha(RectF bounds, int alpha, int saveFlags) {
+    public int saveLayerAlpha(@RecentlyNullable RectF bounds, int alpha, int saveFlags) {
         throw new RuntimeException("Stub!");
     }
 
-    public int saveLayerAlpha(RectF bounds, int alpha) {
+    public int saveLayerAlpha(@RecentlyNullable RectF bounds, int alpha) {
         throw new RuntimeException("Stub!");
     }
 
@@ -144,52 +131,53 @@ public class Canvas {
         throw new RuntimeException("Stub!");
     }
 
-    public void concat(Matrix matrix) {
+    public void concat(@RecentlyNullable Matrix matrix) {
         throw new RuntimeException("Stub!");
     }
 
-    public void setMatrix(Matrix matrix) {
+    public void setMatrix(@RecentlyNullable Matrix matrix) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public void getMatrix(Matrix ctm) {
+    public void getMatrix(@RecentlyNonNull Matrix ctm) {
         throw new RuntimeException("Stub!");
     }
 
+    @RecentlyNonNull
     @Deprecated
     public final Matrix getMatrix() {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public boolean clipRect(RectF rect, Region.Op op) {
+    public boolean clipRect(@RecentlyNonNull RectF rect, @RecentlyNonNull Region.Op op) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public boolean clipRect(Rect rect, Region.Op op) {
+    public boolean clipRect(@RecentlyNonNull Rect rect, @RecentlyNonNull Region.Op op) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean clipRect(RectF rect) {
+    public boolean clipRect(@RecentlyNonNull RectF rect) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean clipOutRect(RectF rect) {
+    public boolean clipOutRect(@RecentlyNonNull RectF rect) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean clipRect(Rect rect) {
+    public boolean clipRect(@RecentlyNonNull Rect rect) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean clipOutRect(Rect rect) {
+    public boolean clipOutRect(@RecentlyNonNull Rect rect) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public boolean clipRect(float left, float top, float right, float bottom, Region.Op op) {
+    public boolean clipRect(float left, float top, float right, float bottom, @RecentlyNonNull Region.Op op) {
         throw new RuntimeException("Stub!");
     }
 
@@ -210,63 +198,65 @@ public class Canvas {
     }
 
     @Deprecated
-    public boolean clipPath(Path path, Region.Op op) {
+    public boolean clipPath(@RecentlyNonNull Path path, @RecentlyNonNull Region.Op op) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean clipPath(Path path) {
+    public boolean clipPath(@RecentlyNonNull Path path) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean clipOutPath(Path path) {
+    public boolean clipOutPath(@RecentlyNonNull Path path) {
         throw new RuntimeException("Stub!");
     }
 
+    @RecentlyNullable
     public DrawFilter getDrawFilter() {
         throw new RuntimeException("Stub!");
     }
 
-    public void setDrawFilter(DrawFilter filter) {
+    public void setDrawFilter(@RecentlyNullable DrawFilter filter) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean quickReject(RectF rect, EdgeType type) {
+    public boolean quickReject(@RecentlyNonNull RectF rect, @RecentlyNonNull EdgeType type) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean quickReject(Path path, EdgeType type) {
+    public boolean quickReject(@RecentlyNonNull Path path, @RecentlyNonNull EdgeType type) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean quickReject(float left, float top, float right, float bottom, EdgeType type) {
+    public boolean quickReject(float left, float top, float right, float bottom, @RecentlyNonNull EdgeType type) {
         throw new RuntimeException("Stub!");
     }
 
-    public boolean getClipBounds(Rect bounds) {
+    public boolean getClipBounds(@RecentlyNullable Rect bounds) {
         throw new RuntimeException("Stub!");
     }
 
+    @RecentlyNonNull
     public final Rect getClipBounds() {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPicture(Picture picture) {
+    public void drawPicture(@RecentlyNonNull Picture picture) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPicture(Picture picture, RectF dst) {
+    public void drawPicture(@RecentlyNonNull Picture picture, @RecentlyNonNull RectF dst) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPicture(Picture picture, Rect dst) {
+    public void drawPicture(@RecentlyNonNull Picture picture, @RecentlyNonNull Rect dst) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawArc(RectF oval, float startAngle, float sweepAngle, boolean useCenter, Paint paint) {
+    public void drawArc(@RecentlyNonNull RectF oval, float startAngle, float sweepAngle, boolean useCenter, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawArc(float left, float top, float right, float bottom, float startAngle, float sweepAngle, boolean useCenter, Paint paint) {
+    public void drawArc(float left, float top, float right, float bottom, float startAngle, float sweepAngle, boolean useCenter, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
@@ -274,37 +264,37 @@ public class Canvas {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawBitmap(Bitmap bitmap, float left, float top, Paint paint) {
+    public void drawBitmap(@RecentlyNonNull Bitmap bitmap, float left, float top, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawBitmap(Bitmap bitmap, Rect src, RectF dst, Paint paint) {
+    public void drawBitmap(@RecentlyNonNull Bitmap bitmap, @RecentlyNullable Rect src, @RecentlyNonNull RectF dst, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawBitmap(Bitmap bitmap, Rect src, Rect dst, Paint paint) {
-        throw new RuntimeException("Stub!");
-    }
-
-    @Deprecated
-    public void drawBitmap(int[] colors, int offset, int stride, float x, float y, int width, int height, boolean hasAlpha, Paint paint) {
+    public void drawBitmap(@RecentlyNonNull Bitmap bitmap, @RecentlyNullable Rect src, @RecentlyNonNull Rect dst, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public void drawBitmap(int[] colors, int offset, int stride, int x, int y, int width, int height, boolean hasAlpha, Paint paint) {
+    public void drawBitmap(@RecentlyNonNull int[] colors, int offset, int stride, float x, float y, int width, int height, boolean hasAlpha, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawBitmap(Bitmap bitmap, Matrix matrix, Paint paint) {
+    @Deprecated
+    public void drawBitmap(@RecentlyNonNull int[] colors, int offset, int stride, int x, int y, int width, int height, boolean hasAlpha, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawBitmapMesh(Bitmap bitmap, int meshWidth, int meshHeight, float[] verts, int vertOffset, int[] colors, int colorOffset, Paint paint) {
+    public void drawBitmap(@RecentlyNonNull Bitmap bitmap, @RecentlyNonNull Matrix matrix, @RecentlyNullable Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawCircle(float cx, float cy, float radius, Paint paint) {
+    public void drawBitmapMesh(@RecentlyNonNull Bitmap bitmap, int meshWidth, int meshHeight, @RecentlyNonNull float[] verts, int vertOffset, @RecentlyNullable int[] colors, int colorOffset, @RecentlyNullable Paint paint) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public void drawCircle(float cx, float cy, float radius, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
@@ -312,69 +302,69 @@ public class Canvas {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawColor(int color, PorterDuff.Mode mode) {
+    public void drawColor(int color, @RecentlyNonNull PorterDuff.Mode mode) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawLine(float startX, float startY, float stopX, float stopY, Paint paint) {
+    public void drawLine(float startX, float startY, float stopX, float stopY, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawLines(float[] pts, int offset, int count, Paint paint) {
+    public void drawLines(@RecentlyNonNull float[] pts, int offset, int count, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawLines(float[] pts, Paint paint) {
+    public void drawLines(@RecentlyNonNull float[] pts, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawOval(RectF oval, Paint paint) {
+    public void drawOval(@RecentlyNonNull RectF oval, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawOval(float left, float top, float right, float bottom, Paint paint) {
+    public void drawOval(float left, float top, float right, float bottom, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPaint(Paint paint) {
+    public void drawPaint(@RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPath(Path path, Paint paint) {
+    public void drawPath(@RecentlyNonNull Path path, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPoint(float x, float y, Paint paint) {
+    public void drawPoint(float x, float y, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPoints(float[] pts, int offset, int count, Paint paint) {
+    public void drawPoints(float[] pts, int offset, int count, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawPoints(float[] pts, Paint paint) {
-        throw new RuntimeException("Stub!");
-    }
-
-    @Deprecated
-    public void drawPosText(char[] text, int index, int count, float[] pos, Paint paint) {
+    public void drawPoints(@RecentlyNonNull float[] pts, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
     @Deprecated
-    public void drawPosText(String text, float[] pos, Paint paint) {
+    public void drawPosText(@RecentlyNonNull char[] text, int index, int count, @RecentlyNonNull float[] pos, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawRect(RectF rect, Paint paint) {
+    @Deprecated
+    public void drawPosText(@RecentlyNonNull String text, @RecentlyNonNull float[] pos, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawRect(Rect r, Paint paint) {
+    public void drawRect(@RecentlyNonNull RectF rect, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawRect(float left, float top, float right, float bottom, Paint paint) {
+    public void drawRect(@RecentlyNonNull Rect r, @RecentlyNonNull Paint paint) {
+        throw new RuntimeException("Stub!");
+    }
+
+    public void drawRect(float left, float top, float right, float bottom, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
@@ -382,47 +372,47 @@ public class Canvas {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawRoundRect(RectF rect, float rx, float ry, Paint paint) {
+    public void drawRoundRect(@RecentlyNonNull RectF rect, float rx, float ry, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawRoundRect(float left, float top, float right, float bottom, float rx, float ry, Paint paint) {
+    public void drawRoundRect(float left, float top, float right, float bottom, float rx, float ry, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawText(char[] text, int index, int count, float x, float y, Paint paint) {
+    public void drawText(@RecentlyNonNull char[] text, int index, int count, float x, float y, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawText(String text, float x, float y, Paint paint) {
+    public void drawText(@RecentlyNonNull String text, float x, float y, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawText(String text, int start, int end, float x, float y, Paint paint) {
+    public void drawText(@RecentlyNonNull String text, int start, int end, float x, float y, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawText(CharSequence text, int start, int end, float x, float y, Paint paint) {
+    public void drawText(@RecentlyNonNull CharSequence text, int start, int end, float x, float y, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawTextOnPath(char[] text, int index, int count, Path path, float hOffset, float vOffset, Paint paint) {
+    public void drawTextOnPath(@RecentlyNonNull char[] text, int index, int count, @RecentlyNonNull Path path, float hOffset, float vOffset, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawTextOnPath(String text, Path path, float hOffset, float vOffset, Paint paint) {
+    public void drawTextOnPath(@RecentlyNonNull String text, @RecentlyNonNull Path path, float hOffset, float vOffset, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawTextRun(char[] text, int index, int count, int contextIndex, int contextCount, float x, float y, boolean isRtl, Paint paint) {
+    public void drawTextRun(@RecentlyNonNull char[] text, int index, int count, int contextIndex, int contextCount, float x, float y, boolean isRtl, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawTextRun(CharSequence text, int start, int end, int contextStart, int contextEnd, float x, float y, boolean isRtl, Paint paint) {
+    public void drawTextRun(@RecentlyNonNull CharSequence text, int start, int end, int contextStart, int contextEnd, float x, float y, boolean isRtl, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 
-    public void drawVertices(VertexMode mode, int vertexCount, float[] verts, int vertOffset, float[] texs, int texOffset, int[] colors, int colorOffset, short[] indices, int indexOffset, int indexCount, Paint paint) {
+    public void drawVertices(@RecentlyNonNull VertexMode mode, int vertexCount, @RecentlyNonNull float[] verts, int vertOffset, @RecentlyNullable float[] texs, int texOffset, @RecentlyNullable int[] colors, int colorOffset, @RecentlyNullable short[] indices, int indexOffset, int indexCount, @RecentlyNonNull Paint paint) {
         throw new RuntimeException("Stub!");
     }
 }
